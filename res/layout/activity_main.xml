@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/gallows2" >
+    <ImageView
+        android:id="@+id/ivConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/config" />
+
+    <Button
+        android:id="@+id/bStart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bStart2"
+        android:layout_alignBottom="@+id/bStart2"
+        android:layout_alignLeft="@+id/imageView1"
+        android:text="1 Jogador" />
+
+    <Button
+        android:id="@+id/bStart2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bSair"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/bStart1"
+        android:text="2 Jogadores" />
+
+    <Button
+        android:id="@+id/bSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivConfig"
+        android:layout_centerHorizontal="true"
+        android:text="Sair" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bStart1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="68dp"
+        android:src="@drawable/forca_0" />
+
+</RelativeLayout>
